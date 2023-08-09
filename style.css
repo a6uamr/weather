@@ -1,0 +1,58 @@
+body, h1, h3, p, h2 {margin: 0;}
+body {background: #1e202b; font-family: 'Varela Round',sans-serif;
+  font-size: 14px; line-height: 1.5;}
+.m {width: calc(100% - 30px); margin: auto;}
+@media screen and (min-width: 768px) {.m {width: 720px;}}
+@media screen and (min-width: 992px) {.m {width: 940px;}}
+@media screen and (min-width: 1200px) {.m {width: 1140px;}}
+a {color: #fff; text-decoration: none;}
+/* c t */
+
+nav>.m {margin: 25px auto; display: flex;
+  justify-content: space-between; align-items: center;}
+h1>a>* {vertical-align: middle;}
+h1 img {margin-right: 10px;}
+h1 span {color: #fff; font-size: 16px; display: inline-flex; flex-flow: column;}
+h1 small {color: #bfc1c8; font-weight: 400; font-size: 10px; margin-top: 5px;}
+@media screen and (max-width: 991px)
+  {nav>.m {height: 44px; overflow: hidden; flex-flow: wrap; transition: .4s;}
+  body:has(nav input:checked) nav>.m {height: 383px;}
+  nav nav {background: #262936; width: 100%; border-radius: 10px;
+    margin-top: 30px; text-align: center; display: flex; flex-flow: column;}
+  nav i {color: #fff; font-size: 22px; transition: .4s;}
+  body:has(nav input:checked) nav i {color: #009ad8}
+  nav nav>a {padding: 20px;} nav nav>[href='#'] {color: #009ad8;}
+  nav nav>:not([href*='contact']) {border-bottom: solid 1px #ffffff1a;}}
+@media screen and (min-width: 992px) {nav label {display: none;}
+  nav nav>a {padding: 5px 25px; border: solid 2px transparent;
+    border-radius: 20px; margin-left: 10px; transition: .4s;}
+  nav nav>[href='#'], nav nav>a:hover {color: #009ad8; border-color: #009ad8;}}
+
+main {background: url(banner.png) no-repeat;}
+main input, .a0 b, .x {color: #fff;}
+main input {background: #1e202b; font-family: inherit; font-size: 1em; width: 100%;
+  padding: 20px; border: 0; outline: 0; border-radius: 30px; margin: 70px 0;}
+main>.m>div {background: #323544; border-radius: 10px; margin-bottom: 50px;
+  display: flex; flex-flow: wrap;}
+article {width: 100%;}
+@media screen and (min-width: 992px) {article {width: calc(100%/3);}}
+h3, h2, article span {color: #bfc1c8;}
+h3 {background: #0000001a; font-weight: 400; font-size: 1em; padding: 10px;}
+p {color: #009ad8;}
+.a0>h3>span {float: right;}
+.a0>div {padding: 30px 20px;}
+h2 {font-weight: 400; font-size: 18px;}
+.a0 span:has(b) {display: block; margin-bottom: 20px;}
+.a0 span:has(b)>* {vertical-align: middle;}
+.a0 b {font-size: 90px; margin-right: 30px;}
+.a0 span:has(b)>img {width: 90px;}
+.a0 span:has(span) {display: flex; margin-top: 20px; gap: 20px;}
+.a0 span>span>img {vertical-align: middle; margin-right: 5px;}
+.a1 {text-align: center;}
+.a1>p {padding: 50px 20px 30px;}
+.a1>p>img {width: 50px;}
+.a1>p>span {display: block; margin: 20px 0;}
+.x {font-size: 24px; font-weight: 700; display: block; margin-bottom: 5px;}
+.x+span {font-size: 16px;}
+.a0+.a1 {background: #262936;}
+
