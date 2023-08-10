@@ -3,7 +3,7 @@ body, h1 {margin: 0;}
 body {background: #1e202b; font-family: 'Varela Round',sans-serif;
   font-size: 13px; line-height: 1.5;}
 .c {width: calc(100% - 30px); margin: auto;}
-a {text-decoration: none;} /*INHERIT*/
+a {text-decoration: none;}
 small {color: #bfc1c8;}
 [placeholder], button {color: #fff; font-family: inherit;
   font-size: 1em; border-radius: 30px;}
@@ -28,8 +28,7 @@ footer .fa-brands {background: #1e202b; color: #009ad8;
   font-size: 20px; width: 40px; text-align: center;
   line-height: 2; border-radius: 50%; transition: .4s;}
 footer a:hover i {background: #009ad8; color: #fff;}
-footer small>a {color: #bfc1c8; margin-right: 15px;}
-footer small>a:hover {text-decoration: underline;}
+footer small>span {margin-right: 15px;}
 
 @media screen and (max-width: 991px)
   {nav>.c {height: 44px; overflow: hidden; flex-flow: wrap; transition: .4s;}
