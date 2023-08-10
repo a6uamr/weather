@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <title>Weather</title>
+    <link rel="icon" href="fi.png">
+    <script src="https://kit.fontawesome.com/ea60552df8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      main {padding: 30px 0;}
+      main nav {background: #262936; font-size: 13px; padding: 20px 30px;
+        border-radius: 30px; margin-bottom: 30px;}
+      main nav>a {color: #bfc1c8;}
+      main nav>a:hover {text-decoration: underline;}
+      main nav>span {color: #fff;}
+      main nav>span::before {content: '›'; color: #bfc1c8; margin: 10px;}
+      article {background: #262936; border-radius: 10px; overflow: hidden;}
+      @media screen and (max-width: 991px) {article {margin-bottom: 30px;}}
+      iframe {width: 100%; height: 220px; border: 0;}
+      article ul {padding: 0;}
+      article li {color: #bfc1c8; padding: 10px;
+        display: flex; align-items: baseline;}
+      article li>a {color: #bfc1c8;}
+      article i {color: #009ad8; margin: 0 10px;}
+      main form h2 {color: #fff; margin: 0 0 16px;}
+      main form p {color: #bfc1c8;}
+      main [placeholder] {box-sizing: border-box; width: 100%; padding: 15px; border: solid 2px #393c48}
+      main form>div {display: flex; flex-flow: wrap; gap: 10px;}
+      @media screen and (min-width: 992px) {main>.c>div {display: flex; justify-content: space-between; align-items: center;} article {width: 40%;} main form {width: 50%;} main>.c input {width: calc((100% - 10px)/2);}}
+      main [placeholder]:is(:hover,:focus) {border-color: #009ad8;}
+      main textarea {min-height: 150px; resize: vertical; margin: 10px 0 4px;}
+      main button {display: block; width: 100%;}
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="c">
+        <h1>
+          <a href="#">
+            <img src="logo.png" alt="logo">
+            <span>Weather<small>tagline goes here</small></span>
+          </a>
+        </h1>
+        <label>
+          <input type="checkbox" hidden>
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="#0">News</a>
+          <a href="#0">Live cameras</a>
+          <a href="#0">Photos</a>
+          <a href="#" class="on off">Contact</a>
+        </nav>  
+      </div>
+    </nav>
+    <main>
+      <div class="c">
+        <nav><a href="index.html">Home</a><span>Contact</span></nav>
+        <div>
+          <article>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.0442234197!2d-118.7413994902036!3d34.02060844444093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2seg!4v1691653161888!5m2!1sen!2seg"></iframe>
+            <ul>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                Company Name INC. 2803 Avenue Street, Los Angeles
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+1 800 314 235">+1 800 314 235</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:contact@companyname.com">contact@companyname.com</a>
+              </li>
+            </ul>
+          </article>
+          <form>
+            <h2>Contact us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore ducimus, facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum. Nisi facilis odit hic, ipsum sed!</p>
+            <div>
+              <input name="n" placeholder="Name">
+              <input type="email" name="e" placeholder="Email">
+              <input name="c" placeholder="Company">
+              <input name="w" placeholder="Website">  
+            </div>
+            <textarea name="m" placeholder="Message"></textarea>
+            <button>Submit</button>
+          </form>  
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="c">
+        <div>
+          <form>
+            <input type="email" name="e" placeholder="Your email">
+            <button>Stay current!</button>
+          </form>
+          <nav>
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          </nav>  
+        </div>
+        <small><a href="https://facebook.com/Routelearning/" target="_blank">Route Academy</a>&copy; 2023 a6uamr</small>
+      </div>
+    </footer>
+  </body>
+</html>
