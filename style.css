@@ -1,42 +1,27 @@
 body, h1, h3, p, h2 {margin: 0;}
 body {background: #1e202b; font-family: 'Varela Round',sans-serif;
   font-size: 14px; line-height: 1.5;}
-.m {width: calc(100% - 30px); margin: auto;}
-@media screen and (min-width: 768px) {.m {width: 720px;}}
-@media screen and (min-width: 992px) {.m {width: 940px;}}
-@media screen and (min-width: 1200px) {.m {width: 1140px;}}
-a {color: #fff; text-decoration: none;}
-/* c t */
+.c {width: calc(100% - 30px); margin: auto;}
+a {text-decoration: none;}
+small, h3, h2, article span {color: #bfc1c8;}
+main input, footer :is(input,button) {color: #fff; font-family: inherit;
+  font-size: 1em; border: 0; border-radius: 30px;}
+[placeholder] {background: #1e202b; outline: 0;}
 
-nav>.m {margin: 25px auto; display: flex;
+nav>.c {margin: 25px auto; display: flex;
   justify-content: space-between; align-items: center;}
+nav>.c a {color: #fff;}
 h1>a>* {vertical-align: middle;}
 h1 img {margin-right: 10px;}
 h1 span {color: #fff; font-size: 16px; display: inline-flex; flex-flow: column;}
-h1 small {color: #bfc1c8; font-weight: 400; font-size: 10px; margin-top: 5px;}
-@media screen and (max-width: 991px)
-  {nav>.m {height: 44px; overflow: hidden; flex-flow: wrap; transition: .4s;}
-  body:has(nav input:checked) nav>.m {height: 383px;}
-  nav nav {background: #262936; width: 100%; border-radius: 10px;
-    margin-top: 30px; text-align: center; display: flex; flex-flow: column;}
-  nav i {color: #fff; font-size: 22px; transition: .4s;}
-  body:has(nav input:checked) nav i {color: #009ad8}
-  nav nav>a {padding: 20px;} nav nav>[href='#'] {color: #009ad8;}
-  nav nav>:not([href*='contact']) {border-bottom: solid 1px #ffffff1a;}}
-@media screen and (min-width: 992px) {nav label {display: none;}
-  nav nav>a {padding: 5px 25px; border: solid 2px transparent;
-    border-radius: 20px; margin-left: 10px; transition: .4s;}
-  nav nav>[href='#'], nav nav>a:hover {color: #009ad8; border-color: #009ad8;}}
+h1 small {font-weight: 400; font-size: 10px; margin-top: 5px;}
 
 main {background: url(banner.png) no-repeat;}
-main input, .a0 b, .x {color: #fff;}
-main input {background: #1e202b; font-family: inherit; font-size: 1em; width: 100%;
-  padding: 20px; border: 0; outline: 0; border-radius: 30px; margin: 70px 0;}
-main>.m>div {background: #323544; border-radius: 10px; margin-bottom: 50px;
+.a0 b, .x {color: #fff;}
+main input {width: 100%; padding: 20px; margin: 70px 0;}
+main>.c>div {background: #323544; border-radius: 10px; margin-bottom: 50px;
   display: flex; flex-flow: wrap;}
 article {width: 100%;}
-@media screen and (min-width: 992px) {article {width: calc(100%/3);}}
-h3, h2, article span {color: #bfc1c8;}
 h3 {background: #0000001a; font-weight: 400; font-size: 1em; padding: 10px;}
 p {color: #009ad8;}
 .a0>h3>span {float: right;}
@@ -56,3 +41,36 @@ h2 {font-weight: 400; font-size: 18px;}
 .x+span {font-size: 16px;}
 .a0+.a1 {background: #262936;}
 
+footer {background: #262936; padding: 30px 0;}
+footer>.c>div {margin-bottom: 30px; display: flex;}
+footer form {width: 100%; position: relative;}
+footer input {width: calc(100% - 170px); padding: 20px 150px 20px 20px;}
+footer button {background: #009ad8; padding: 0 20px;
+  position: absolute; top: 5px; bottom: 5px; right: 5px; cursor: pointer;}
+footer nav {width: 100%; display: flex; justify-content: center; gap: 5px;}
+footer .fa-brands {background: #1e202b; color: #009ad8;
+  font-size: 20px; width: 40px; text-align: center;
+  line-height: 2; border-radius: 50%; transition: .4s;}
+footer a:hover i {background: #009ad8; color: #fff;}
+footer small>a {color: #bfc1c8; margin-right: 18.67px;}
+footer small>a:hover {text-decoration: underline;}
+
+@media screen and (max-width: 991px)
+  {nav>.c {height: 44px; overflow: hidden; flex-flow: wrap; transition: .4s;}
+  body:has(nav input:checked) nav>.c {height: 378px;}
+  nav nav {background: #262936; width: 100%; border-radius: 10px;
+    margin-top: 25px; text-align: center; display: flex; flex-flow: column;}
+  nav>.c i {color: #fff; font-size: 22px; transition: .4s;}
+  body:has(nav input:checked) nav>.c i {color: #009ad8}
+  nav nav>a {padding: 20px;} nav nav>[href='#'] {color: #009ad8;}
+  nav nav>:not([href*='contact']) {border-bottom: solid 1px #ffffff1a;}
+  footer>.c>div {flex-flow: wrap; gap: 30px;}
+  footer small {display: block; text-align: center;}}
+@media screen and (min-width: 768px) {.c {width: 720px;}}
+@media screen and (min-width: 992px) {.c {width: 940px;} nav label {display: none;}
+  nav nav>a {padding: 5px 25px; border: solid 2px transparent;
+    border-radius: 20px; margin-left: 10px; transition: .4s;}
+  nav nav>[href='#'], nav nav>a:hover {color: #009ad8; border-color: #009ad8;}
+  article {width: calc(100%/3);} footer form {width: calc(200%/3);}
+  footer nav {width: calc(100%/3); align-items: center;}}
+@media screen and (min-width: 1200px) {.c {width: 1140px;}}
