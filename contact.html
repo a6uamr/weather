@@ -7,30 +7,33 @@
     <script src="https://kit.fontawesome.com/ea60552df8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <style>
-      main {padding: 30px 0;}
-      main nav {background: #262936; font-size: 13px; padding: 20px 30px;
-        border-radius: 30px; margin-bottom: 30px;}
+      main {padding: 25px 0 50px;}
+      main nav {background: #262936; padding: 20px 30px;
+        border-radius: 30px; margin-bottom: 50px;}
       main nav>a {color: #bfc1c8;}
       main nav>a:hover {text-decoration: underline;}
       main nav>span {color: #fff;}
       main nav>span::before {content: '›'; color: #bfc1c8; margin: 10px;}
       article {background: #262936; border-radius: 10px; overflow: hidden;}
       @media screen and (max-width: 991px) {article {margin-bottom: 30px;}}
-      iframe {width: 100%; height: 220px; border: 0;}
+      iframe {width: 100%; height: 293px; border: 0;}
       article ul {padding: 0;}
       article li {color: #bfc1c8; padding: 10px;
         display: flex; align-items: baseline;}
-      article li>a {color: #bfc1c8;}
-      article i {color: #009ad8; margin: 0 10px;}
-      main form h2 {color: #fff; margin: 0 0 16px;}
-      main form p {color: #bfc1c8;}
-      main [placeholder] {box-sizing: border-box; width: 100%; padding: 15px; border: solid 2px #393c48}
+      article i {color: #009ad8; width: 35px; text-align: center; flex-shrink: 0;}
+      article li>a {color: inherit;}
+      main form>h2 {color: #fff; margin: 0 0 16px;}
+      main form>p {color: #bfc1c8; text-align: justify;}
+      main [placeholder] {box-sizing: border-box; width: 100%; padding: 15px;
+        border: solid 2px #393c48; transition: border-color .4s;}
       main form>div {display: flex; flex-flow: wrap; gap: 10px;}
-      @media screen and (min-width: 992px) {main>.c>div {display: flex; justify-content: space-between; align-items: center;} article {width: 40%;} main form {width: 50%;} main>.c input {width: calc((100% - 10px)/2);}}
+      @media screen and (min-width: 992px)
+        {main>.c>div {display: flex; justify-content: space-between;}
+        article {width: 40%;} main form {width: 50%;}
+        main>.c input {width: calc((100% - 10px)/2);}}
       main [placeholder]:is(:hover,:focus) {border-color: #009ad8;}
-      main textarea {min-height: 150px; resize: vertical; margin: 10px 0 4px;}
-      main button {display: block; width: 100%;}
-
+      main textarea {height: 150px; resize: none; margin: 10px 0 4px;}
+      main button {width: 100%;}
     </style>
   </head>
   <body>
@@ -78,7 +81,7 @@
           </article>
           <form>
             <h2>Contact us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore ducimus, facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum. Nisi facilis odit hic, ipsum sed!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, dolorem fugit quibusdam voluptas quisquam maxime et perspiciatis ad ratione ea provident amet rerum animi temporibus aliquam sapiente, quia voluptatibus corporis!</p>
             <div>
               <input name="n" placeholder="Name">
               <input type="email" name="e" placeholder="Email">
@@ -99,10 +102,18 @@
             <button>Stay current!</button>
           </form>
           <nav>
-            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://facebook.com" target="_blank">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
           </nav>  
         </div>
         <small><a href="https://facebook.com/Routelearning/" target="_blank">Route Academy</a>&copy; 2023 a6uamr</small>

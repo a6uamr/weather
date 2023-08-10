@@ -3,7 +3,7 @@ body, h1 {margin: 0;}
 body {background: #1e202b; font-family: 'Varela Round',sans-serif;
   font-size: 13px; line-height: 1.5;}
 .c {width: calc(100% - 30px); margin: auto;}
-a {text-decoration: none;}
+a {text-decoration: none;} /*INHERIT*/
 small {color: #bfc1c8;}
 [placeholder], button {color: #fff; font-family: inherit;
   font-size: 1em; border-radius: 30px;}
