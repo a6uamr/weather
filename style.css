@@ -60,7 +60,7 @@ footer small>a:hover {text-decoration: underline;}
   body:has(nav input:checked) nav>.c {height: 378px;}
   nav nav {background: #262936; width: 100%; border-radius: 10px;
     margin-top: 25px; text-align: center; display: flex; flex-flow: column;}
-  nav>.c i {color: #fff; font-size: 22px; transition: .4s;}
+  nav>.c i {color: #fff; font-size: 22px; cursor: pointer; transition: .4s;}
   body:has(nav input:checked) nav>.c i {color: #009ad8}
   nav nav>a {padding: 20px;} nav nav>[href='#'] {color: #009ad8;}
   nav nav>:not([href*='contact']) {border-bottom: solid 1px #ffffff1a;}
