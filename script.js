@@ -18,7 +18,6 @@ function W(i){fetch(`https://api.weatherapi.com/v1/forecast.json?key=c023aef25a1
   ${j.forecast.forecastday[i].day.maxtemp_c}°C</span><span>
   ${j.forecast.forecastday[i].day.mintemp_c}°C</span></span>
   ${j.forecast.forecastday[i].day.condition.text}`;}});}
-if(navigator.geolocation){navigator.geolocation.getCurrentPosition(function(p)
-  {W(`${p.coords.latitude},${p.coords.longitude}`);},function(){W('cairo');})}
-else W('cairo');
+navigator.geolocation.getCurrentPosition(function(p)
+  {W(`${p.coords.latitude},${p.coords.longitude}`);},function(){W('cairo');})
 document.querySelector('main input').addEventListener('input',function(){W(this.value);});
