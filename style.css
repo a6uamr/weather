@@ -3,6 +3,7 @@ body, h1 {margin: 0;}
 body {background: #1e202b; font-family: 'Varela Round',sans-serif;
   font-size: 13px; line-height: 1.5;}
 .c {width: calc(100% - 30px); margin: auto;}
+a:not([href*='#']), button {-webkit-tap-highlight-color: #0000;}
 a {text-decoration: none;}
 small {color: #bfc1c8;}
 [placeholder], button {color: #fff; font-family: inherit;
@@ -31,11 +32,11 @@ footer .fa-brands {background: #1e202b; color: #009ad8;
 footer a:hover i {background: #009ad8; color: #fff;}
 footer small>span {margin-right: 15px;}
 
-@media screen and (pointer) {nav>.c i {cursor: pointer;}}
 @media screen and (max-width: 991px)
   {nav>.c {height: 44px; overflow: hidden; flex-flow: wrap; transition: .4s;}
   body:has(nav input:checked) nav>.c {height: 370.5px;}
-  nav>.c i {color: #fff; font-size: 22px; padding: 5px 0 5px 5px; transition: .4s;}
+  nav>.c i {color: #fff; font-size: 22px;
+    padding: 5px 0 5px 5px; cursor: pointer; transition: .4s;}
   body:has(nav input:checked) nav>.c i {color: #009ad8;}
   nav nav {background: #262936; width: 100%; border-radius: 10px;
     margin-top: 25px; text-align: center; display: flex; flex-flow: column;}
@@ -45,7 +46,7 @@ footer small>span {margin-right: 15px;}
   footer small {display: block; text-align: center;}}
 @media screen and (min-width: 768px) {.c {width: 720px;}}
 @media screen and (min-width: 992px) {.c {width: 940px;} nav label {display: none;}
-  nav nav>a {padding: 5px 20px; border: solid 2px transparent;
+  nav nav>a {padding: 5px 20px; border: solid 2px #0000;
     border-radius: 20px; margin-left: 10px; transition: .4s;}
   .on, nav nav>a:hover {color: #009ad8; border-color: #009ad8;}
   footer form {width: calc(200%/3);}
