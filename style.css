@@ -31,12 +31,11 @@ footer .fa-brands {background: #1e202b; color: #009ad8;
 footer a:hover i {background: #009ad8; color: #fff;}
 footer small>span {margin-right: 15px;}
 
+@media screen and (pointer) {nav>.c i {cursor: pointer;}}
 @media screen and (max-width: 991px)
   {nav>.c {height: 44px; overflow: hidden; flex-flow: wrap; transition: .4s;}
   body:has(nav input:checked) nav>.c {height: 370.5px;}
-  nav>.c i {color: #fff; font-size: 22px;
-    padding: 5px 0 5px 5px; cursor: pointer; transition: .4s;}
-  nav>.c i::selection {background: 0;}
+  nav>.c i {color: #fff; font-size: 22px; padding: 5px 0 5px 5px; transition: .4s;}
   body:has(nav input:checked) nav>.c i {color: #009ad8;}
   nav nav {background: #262936; width: 100%; border-radius: 10px;
     margin-top: 25px; text-align: center; display: flex; flex-flow: column;}
